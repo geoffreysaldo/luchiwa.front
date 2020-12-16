@@ -1,0 +1,23 @@
+<div class='main_div'>
+    <mat-card>
+        <h2>Mon compte</h2>
+        <div class="success" *ngIf="success">
+            {{success}}
+        </div>
+        <div class='div_account'>
+            <div class='div_info'>
+                <span>Email</span>
+                <span>{{userInfo.email}}</span>
+            </div>
+            <div class='div_info'>
+                <span>Mot de passe</span>
+                <span (click)="resetPassword()" class="link">Modifier mon mot de passe</span>
+            </div>
+        </div>
+    </mat-card>
+    <mat-card>
+        <h2>Mes informations personnelles</h2>
+        <div class='div_account'>
+        </div>
+    </mat-card>
+</div>

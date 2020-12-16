@@ -1,0 +1,38 @@
+.div_validation{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    width:100%;
+
+    .card_result{
+        text-align: center;
+        width:50%;
+        min-width:450px;
+        font-size:16px;
+        font-weight: bold;
+    }
+
+    .error{
+        border: solid;
+        border-width: 2px;
+        border-radius: 4px;
+        border-color: #7C0202;
+        background-color: #D29494;
+        padding: 8px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    .success{
+        border: solid;
+        border-width: 2px;
+        border-radius: 4px;
+        border-color: #498770;
+        background-color: #A4D294;
+        padding: 8px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

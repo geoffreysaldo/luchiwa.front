@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button color="accent">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <div class="div_link_enseigne"><span>Luchiwa</span></div>
+    <div class="div_menu">
+        <div class="div_link"><a [routerLink]="['commandes']" class="link">Commandes</a></div>
+        <div class="div_link"><a [routerLink]="['produits']" class="link">Produits</a></div>
+        <div class="div_link"><a [routerLink]="['horaires']" class="link">Horaires</a></div>
+    </div>
+    <span  class="example-spacer"></span>
+    <button mat-button [routerLink]="['connexion']" *ngIf="!isAuthenticated">
+        <mat-icon>account_circle</mat-icon>
+        Se connecter
+    </button>
+    <button mat-button (click)="logout()" *ngIf="isAuthenticated">
+        <mat-icon>account_circle</mat-icon>
+        Se déconnecter
+    </button>
+</mat-toolbar>
